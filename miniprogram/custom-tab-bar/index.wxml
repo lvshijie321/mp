@@ -1,0 +1,7 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<view class="tab-bar">
+  <view wx:for="{{list}}" wx:key="index" class="tab-bar-item {{ (selectedIndex === index ? ' active' : '') + (item.main ? ' main' : '') }}" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <van-icon class="icon" name="{{item.iconPath}}" />
+    <text>{{item.text}}</text>
+  </view>
+</view>

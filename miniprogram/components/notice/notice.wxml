@@ -1,0 +1,4 @@
+<view class="notice">
+  <van-icon  class="icon" name="bell" />
+  <view class="count">77</view>
+</view>

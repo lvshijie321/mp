@@ -1,0 +1,8 @@
+<view class="page">
+  <navigation-bar title="{{title}}" back="{{false}}" color="black" background="#FFF">
+    <slot name="navLeft" slot="left"></slot>
+  </navigation-bar>
+  <view class="content">
+    <slot></slot>
+  </view>
+</view>

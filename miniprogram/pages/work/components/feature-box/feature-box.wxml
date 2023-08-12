@@ -1,0 +1,12 @@
+<view class="feature-box">
+  <view class="title">{{feature.name}}</view>
+  <view class="list">
+    <view class="item" wx:for="{{feature.list}}" wx:key="index">
+      <view class="inner" wx:if="{{!item.placeholder}}">
+        <image src="{{item.image}}" />
+        <view class="text">{{item.label}}</view>
+      </view>
+    </view>
+  </view>
+</view> 
+ 

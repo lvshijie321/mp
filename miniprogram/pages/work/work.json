@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "page": "/components/page/page",
+    "notice": "/components/notice/notice",
+    "banner": "./components/banner/banner",
+    "feature-box": "./components/feature-box/feature-box",
+    "van-popup": "@vant/weapp/popup/index"
+  }
+}

@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<page class="page" title="早上好！张三先生">
+  <notice slot="navLeft" />
+  <banner />
+  <view class="tip-bar">
+    <view class="tip-bar-item" wx:for="{{tips}}" wx:key="index">
+      <view class="image-wrap">
+        <image src="{{item.icon}}" />
+      </view>
+      <text>{{item.label}}</text>
+    </view>
+  </view>
+  <view class="wall">
+    <view class="wall-item" wx:for="{{walls}}" wx:key="index" bindtap="onTapWallItem" data-item="{{item}}">
+      <view class="inner" wx:if="{{!item.placeholder}}">
+        <image src="{{item.icon}}" />
+        <view class="text">{{item.label}}</view>
+      </view>
+    </view>
+  </view>
+</page>
+
+<van-popup show="{{ show }}" root-portal bind:close="onClose" custom-style="background: transparent;">
+  <feature-box feature="{{feature}}" />
+</van-popup>
