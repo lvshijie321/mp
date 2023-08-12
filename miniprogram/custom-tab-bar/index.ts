@@ -2,24 +2,24 @@ Component({
   data: {
     selectedIndex: 0,
     list: [{
-      pagePath: "/work/work",
+      pagePath: "/pages/work/work",
       iconPath: "comment",
       text: "工作"
     }, {
-      pagePath: "/help/help",
+      pagePath: "/pages/help/help",
       iconPath: "phone-circle-o",
       text: "助手"
     }, {
-      pagePath: "/home/home",
+      pagePath: "/pages/home/home",
       iconPath: "plus",
       text: "常用",
       main: true
     }, {
-      pagePath: "/analysis/analysis",
+      pagePath: "/pages/analysis/analysis",
       iconPath: "chart-trending-o",
       text: "分析"
     }, {
-      pagePath: "/me/me",
+      pagePath: "/pages/me/me",
       iconPath: "manager-o",
       text: "我"
     }]
